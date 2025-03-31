@@ -3,103 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Mi corazón <3</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column; /* Stack elements vertically */
-        align-items: center;
-        justify-content: center;
-        background: #000000;
-      }
-
-      h1,
-      h2 {
-        color: white;
-        text-align: center;
-        margin-bottom: 20px;
-      }
-
-      .heart-container {
-        margin-top: 5%;
-        margin-bottom: 5%;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .heart {
-        height: 150px;
-        width: 150px;
-        background-color: red;
-        position: relative;
-        transform: rotate(45deg);
-        box-shadow: -20px 20px 150px #f20404;
-        animation: palpitar 0.5s linear infinite alternate;
-      }
-
-      @keyframes palpitar {
-        0% {
-          transform: rotate(45deg) scale(1.1);
-        }
-        80% {
-          transform: rotate(45deg) scale(1);
-        }
-        100% {
-          transform: rotate(45deg) scale(0.8);
-        }
-      }
-
-      .heart::before {
-        content: "";
-        position: absolute;
-        height: 150px;
-        width: 150px;
-        background-color: red;
-        right: 50%;
-        border-radius: 50%;
-        box-shadow: 20px 20px 150px #f20404;
-      }
-
-      .heart::after {
-        content: "";
-        position: absolute;
-        height: 150px;
-        width: 150px;
-        background-color: red;
-        top: -50%;
-        border-radius: 50%;
-        box-shadow: 20px 20px 150px #f20404;
-      }
-
-      .contenido {
-        position: absolute;
-        text-align: center;
-      }
-
-      .contenido h1,
-      .contenido h2 {
-        color: white;
-        margin: 0;
-        font-size: 20px;
-      }
-      p {
-        font-size: 20px;
-        color: white;
-      }
-      hr {
-        width: 99%;
-        border: 1.5px solid red;
-        margin: 0;
-      }
-      a {
-        font-size: 18px;
-      }
-    </style>
+    <style></style>
   </head>
   <body>
     <h1>Cariño mio</h1>
@@ -145,6 +51,46 @@
     <a href="https://www.youtube.com/watch?v=7h2ryr_uUEs" target="_blank">
       Escucha esto cuando puedas</a
     >
+    <hr />
+    <h2>Ilse el 31/03/2025 hizo:</h2>
+    <h3>Recordando cuando lo jugamos a la distancia usando papel :D</h3>
+    <div id="contenedor">
+      <div id="grupo1">
+        <div id="g1" class="cuadro"></div>
+        <div id="g2" class="cuadro"></div>
+        <div id="g3" class="cuadro"></div>
+      </div>
+      <div id="grupo2">
+        <div id="g4" class="cuadro"></div>
+        <div id="g5" class="cuadro"></div>
+        <div id="g6" class="cuadro"></div>
+      </div>
+      <div id="grupo3">
+        <div id="g7" class="cuadro"></div>
+        <div id="g8" class="cuadro"></div>
+        <div id="g9" class="cuadro"></div>
+      </div>
+    </div>
+
+    <!-- <table>
+      <tbody>
+      <tr>
+        <td id="c1"></td>
+        <td id="c2"></td>
+        <td id="c3"></td>
+      </tr>
+      <tr>
+        <td id="c4"></td>
+        <td id="c5"><i class="ion-record"></i></td>
+        <td id="c6"></td>
+      </tr>
+      <tr>
+        <td id="c7"></td>
+        <td id="c8"><i class="ion-android-close"></i></td>
+        <td id="c9"></td>
+      </tr>
+      </tbody>
+    </table> -->
     <hr />
   </body>
 </html>
